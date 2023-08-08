@@ -1,0 +1,36 @@
+$primary-color: #1f3322;
+$secundary-color: #709775;
+$text-color: #f2f7f3;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: $primary-color;
+  color: $text-color;
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  .navbar-right {
+    display: flex;
+
+    .nav-button {
+      margin-left: 15px;
+      padding: 5px 10px;
+      background-color: transparent;
+      border: none;
+      color: $text-color;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  }
+}
