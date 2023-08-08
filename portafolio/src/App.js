@@ -1,4 +1,5 @@
 import "./App.css";
+import Proyectos from "./components/banner/proyectos";
 import Navbar from "./components/header/navbar";
 
 export default function App() {
@@ -7,6 +8,9 @@ export default function App() {
       <header>
         <Navbar />
       </header>
+      <banner>
+        <Proyectos />
+      </banner>
     </div>
   );
 }

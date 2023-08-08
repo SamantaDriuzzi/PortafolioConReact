@@ -1,0 +1,12 @@
+@import "../variables";
+
+.lista-proyectos {
+  display: flex;
+  flex-direction: column;
+}
+
+.proyecto-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
