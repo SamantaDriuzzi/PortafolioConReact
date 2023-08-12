@@ -1,0 +1,114 @@
+@import "../variables";
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+.proyectos-banner {
+  height: 90vh;
+  margin-top: -50px;
+  position: relative;
+
+  .contenedor-banner {
+    .contenedor-titulo {
+      background-color: $secundary-color;
+      height: 80px;
+      width: 100%;
+
+      .titulo-seccion {
+        margin-left: 50px;
+        font-family: "Vina Sans", cursive;
+        font-size: 44px;
+        color: $primary-color;
+        letter-spacing: 2px;
+        width: auto;
+      }
+    }
+
+    .parrafo-seccion {
+      font-size: 22px;
+      justify-content: center;
+      display: flex;
+      font-family: "ABeeZee", sans-serif;
+    }
+  }
+}
+
+.swiper {
+  width: 500px;
+  height: auto;
+
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    border: 5px solid $secundary-color;
+    background-color: $secundary-color;
+    max-width: calc(100% - 48px);
+
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .contenedor-descripcion-proyecto {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      padding: 88px 16px 24px;
+      box-sizing: border-box;
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1.75)
+      );
+      border-radius: 0 0 8px 8px;
+
+      .nombre-proyecto {
+        color: $text-color;
+        font-family: "ABeeZee", sans-serif;
+        width: 100%;
+        margin: 0;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 1.1;
+      }
+
+      .descripcion-proyecto {
+        font-family: "ABeeZee", sans-serif;
+        text-align: center;
+        margin: 8px 0 0;
+        font-size: 14px;
+        font-weight: 500;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        color: $text-color;
+      }
+    }
+  }
+}
+@media screen and (max-width: 868px) {
+  .titulo-seccion {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .parrafo-seccion {
+    font-size: 8px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .swiper {
+    width: 200px;
+    height: auto;
+  }
+}
