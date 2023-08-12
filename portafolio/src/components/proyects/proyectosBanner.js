@@ -7,13 +7,14 @@ const ProyectosBanner = () => {
     <section className="proyectos-banner">
       <div className="contenedor-banner">
         <div className="contenedor-titulo">
-          <h2 className="titulo-seccion">Mis Proyectos</h2>
+          <h2 className="titulo-seccion">Mis proyectos</h2>
         </div>
         <p className="parrafo-seccion">
           Explora algunos de los proyectos en los que he trabajado.
         </p>
-        <Proyectos />
       </div>
+
+      <Proyectos />
     </section>
   );
 };

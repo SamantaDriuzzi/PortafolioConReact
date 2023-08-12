@@ -13,25 +13,16 @@ export default function Proyectos() {
    * Permite la inteacción con el usuario logrando deslizar cada tarjeta a ambos lados.
    */
   return (
-    <>
-      <Swiper
-        effect={"cards"}
-        grabCursor={true}
-        modules={[EffectCards]}
-        loop={true}
-      >
-        {listaDeProyectos.map((proyecto) => (
-          <SwiperSlide>
-            <div className="tarjeta">
-              <div className="imagen">
-                <img src={proyecto.imagen} alt={proyecto.nombre} />
-              </div>
-              <h3 className="nombre-proyecto">{proyecto.nombre}</h3>
-              <h4 className="descripcion-proyecto">{proyecto.descripcion}</h4>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </>
+    <Swiper effect={"cards"} grabCursor={true} modules={[EffectCards]} loop='true'> 
+      {listaDeProyectos.map((proyecto) => (
+        <SwiperSlide key={proyecto.key}>
+          <img className="imagen" src={proyecto.imagen} alt={proyecto.nombre} />
+          <div className="contenedor-descripcion-proyecto">
+            <h3 className="nombre-proyecto">{proyecto.nombre}</h3>
+            <h4 className="descripcion-proyecto">{proyecto.descripcion}</h4>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 }
