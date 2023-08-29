@@ -1,0 +1,52 @@
+.star-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 80vh;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  animation: twinkling 4s infinite;
+}
+
+@keyframes twinkling {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.star-fugaz {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #708df7;
+  border-radius: 50%;
+  opacity: 0;
+  animation: shooting-star 8s linear infinite;
+}
+
+@keyframes shooting-star {
+  0% {
+    transform: translateX(100%) translateY(0%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-250%) translateY(250%);
+    opacity: 1.5;
+  }
+  100% {
+    transform: translateX(-500%) translateY(500%);
+    opacity: 0;
+  }
+}
