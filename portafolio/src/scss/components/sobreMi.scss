@@ -6,11 +6,12 @@
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+  background-image: url(../../images/fondoPorta.png);
 }
 
 .nombre {
   font-family: "Vina Sans", cursive;
-  color: $primary-color;
+  color: $text-color;
   font-size: 44px;
   letter-spacing: 1px;
 }
@@ -23,6 +24,6 @@
 
 .descripcion {
   font-family: "ABeeZee", sans-serif;
-  color: $primary-color;
+  color: $text-color;
   font-size: 80%;
 }

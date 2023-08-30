@@ -8,7 +8,7 @@ const proyectosLista = [
     key: "bear",
     nombre: "Bear Animation",
     descripcion:
-      "Esta es mi primera transformación con CSS para posicionar y dimensionar partes de un oso, crear un fondo y animarlo.",
+      "Mi primer transformación con CSS para posicionar y dimensionar un oso, crear un fondo y animarlo.",
     imagen: bear,
   },
   {
@@ -21,14 +21,14 @@ const proyectosLista = [
     key: "tributePage",
     nombre: "Tribute Page",
     descripcion:
-      "Pagina tributo para practicas e implementación de los primeros conocimientos en HTML y CSS",
+      "Pagina tributo para practicas e implementación de las bases en HTML y CSS",
     imagen: tribute,
   },
   {
     key: "portfolioHTML",
     nombre: "Portfolio HTML",
     descripcion:
-      "Con este desafio propuesto por 'freeCodeCamp' perfeccioné mis habilidades en 'Diseño web responsivo'",
+      "Desafio de 'freeCodeCamp' para perfeccionar mis habilidades en 'Diseño web responsivo'",
     imagen: portfolio,
   },
 ];

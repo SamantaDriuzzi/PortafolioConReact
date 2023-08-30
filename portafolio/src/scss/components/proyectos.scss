@@ -6,13 +6,16 @@
   box-sizing: inherit;
 }
 .proyectos-banner {
-  height: 90vh;
+  height: 100vh;
   margin-top: -50px;
-  position: relative;
+
+  background-image: url(../../images/imagenProyectos.png);
+  background-size: cover;
+  background-position: center;
 
   .contenedor-banner {
     .contenedor-titulo {
-      background-color: $secundary-color;
+      background-color: $primary-color;
       height: 80px;
       width: 100%;
 
@@ -20,7 +23,7 @@
         margin-left: 50px;
         font-family: "Vina Sans", cursive;
         font-size: 44px;
-        color: $primary-color;
+        color: $text-color;
         letter-spacing: 2px;
         width: auto;
       }
@@ -31,12 +34,13 @@
       justify-content: center;
       display: flex;
       font-family: "ABeeZee", sans-serif;
+      color: $text-color;
     }
   }
 }
 
 .swiper {
-  width: 500px;
+  width: 350px;
   height: auto;
 
   .swiper-slide {
@@ -84,7 +88,7 @@
         font-family: "ABeeZee", sans-serif;
         text-align: center;
         margin: 8px 0 0;
-        font-size: 14px;
+        font-size: 10px;
         font-weight: 500;
         display: -webkit-box;
         -webkit-box-orient: vertical;
@@ -93,6 +97,11 @@
         color: $text-color;
       }
     }
+  }
+}
+@media screen and (min-width: 868px) {
+  .swiper {
+    width: 440px;
   }
 }
 @media screen and (max-width: 868px) {
@@ -110,5 +119,14 @@
   .swiper {
     width: 200px;
     height: auto;
+  }
+  .titulo-seccion {
+    margin-left: 0;
+    font-size: 9px;
+  }
+
+  .parrafo-seccion {
+    font-size: 4px;
+    text-align: center;
   }
 }
