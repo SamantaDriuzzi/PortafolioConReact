@@ -15,21 +15,10 @@
 
   .contenedor-banner {
     .contenedor-titulo {
-      background-color: $primary-color;
-      height: 12vh;
-      width: 100%;
-      display: flex;
-      align-content: center;
-      flex-direction: row;
-      flex-wrap: wrap;
+      @include contenedor-titulo;
 
       .titulo-seccion {
-        font-family: $text-font;
-        font-size: 44px;
-        color: $text-color;
-        letter-spacing: 2px;
-        width: auto;
-        margin-left: 50px;
+        @include titulo-seccion();
       }
       @media screen and (max-width: 400px) {
         .titulo-seccion {
@@ -39,11 +28,7 @@
     }
 
     .parrafo-seccion {
-      font-size: 22px;
-      justify-content: center;
-      display: flex;
-      font-family: $text-font;
-      color: $text-color;
+      @include descripcion();
     }
     @media screen and (max-width: 400px) {
       .parrafo-seccion {
@@ -103,8 +88,8 @@
         font-family: $text-font;
         text-align: center;
         margin: 8px 0 0;
-        font-size: 10px;
-        font-weight: 500;
+        font-size: 15px;
+        font-weight: 200;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;

@@ -2,3 +2,36 @@ $primary-color: #070e30;
 $secundary-color: #145490;
 $text-color: #f2f7f3;
 $text-font: "Bricolage Grotesque", sans-serif;
+$pantalla-chica: 400px;
+
+@mixin descripcion {
+  font-size: 18px;
+  text-align: center;
+  font-family: $text-font;
+  color: $text-color;
+  font-weight: 200;
+}
+
+@mixin pantalla-chica {
+  width: 250px;
+  font-size: 8px;
+}
+
+@mixin titulo-seccion {
+  font-family: $text-font;
+  font-size: 44px;
+  color: $text-color;
+  letter-spacing: 2px;
+  width: auto;
+  margin-left: 50px;
+}
+
+@mixin contenedor-titulo {
+  background-color: $primary-color;
+  height: 12vh;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
