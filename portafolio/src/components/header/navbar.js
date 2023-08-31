@@ -9,6 +9,8 @@ const Navbar = () => {
         {/* Botones de navegación */}
         <button className="nav-button">Inicio</button>
         <button className="nav-button">Proyectos</button>
+        <button className="nav-button">Habilidades</button>
+        <button className="nav-button" >Sobre mi</button>
         <button className="nav-button">Contacto</button>
       </div>
     </nav>

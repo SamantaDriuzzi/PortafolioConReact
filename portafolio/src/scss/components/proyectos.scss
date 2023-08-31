@@ -5,10 +5,10 @@
 *::after {
   box-sizing: inherit;
 }
+
 .proyectos-banner {
   height: 100vh;
   margin-top: -50px;
-
   background-image: url(../../images/imagenProyectos.png);
   background-size: cover;
   background-position: center;
@@ -16,16 +16,25 @@
   .contenedor-banner {
     .contenedor-titulo {
       background-color: $primary-color;
-      height: 80px;
+      height: 12vh;
       width: 100%;
+      display: flex;
+      align-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
 
       .titulo-seccion {
-        margin-left: 50px;
-        font-family: "Vina Sans", cursive;
+        font-family: $text-font;
         font-size: 44px;
         color: $text-color;
         letter-spacing: 2px;
         width: auto;
+        margin-left: 50px;
+      }
+      @media screen and (max-width: 400px) {
+        .titulo-seccion {
+          font-size: 26px;
+        }
       }
     }
 
@@ -33,14 +42,20 @@
       font-size: 22px;
       justify-content: center;
       display: flex;
-      font-family: "ABeeZee", sans-serif;
+      font-family: $text-font;
       color: $text-color;
+    }
+    @media screen and (max-width: 400px) {
+      .parrafo-seccion {
+        font-size: 17px;
+        text-align: center;
+      }
     }
   }
 }
 
 .swiper {
-  width: 350px;
+  width: 450px;
   height: auto;
 
   .swiper-slide {
@@ -76,7 +91,7 @@
 
       .nombre-proyecto {
         color: $text-color;
-        font-family: "ABeeZee", sans-serif;
+        font-family: $text-font;
         width: 100%;
         margin: 0;
         font-weight: bold;
@@ -85,7 +100,7 @@
       }
 
       .descripcion-proyecto {
-        font-family: "ABeeZee", sans-serif;
+        font-family: $text-font;
         text-align: center;
         margin: 8px 0 0;
         font-size: 10px;
@@ -99,34 +114,9 @@
     }
   }
 }
-@media screen and (min-width: 868px) {
-  .swiper {
-    width: 440px;
-  }
-}
-@media screen and (max-width: 868px) {
-  .titulo-seccion {
-    margin-left: 0;
-    font-size: 16px;
-  }
-
-  .parrafo-seccion {
-    font-size: 8px;
-    text-align: center;
-  }
-}
 @media screen and (max-width: 400px) {
   .swiper {
-    width: 200px;
+    width: 250px;
     height: auto;
-  }
-  .titulo-seccion {
-    margin-left: 0;
-    font-size: 9px;
-  }
-
-  .parrafo-seccion {
-    font-size: 4px;
-    text-align: center;
   }
 }

@@ -3,7 +3,7 @@ import "../../scss/components/sobreMi.scss";
 
 const SobreMi = () => {
   return (
-    <section className="seccionSobreMi">
+    <section className="seccionSobreMi" id="sobreMI">
       <h3 className="saludo">{dataSobreMi.saludo}</h3>
       <h1 className="nombre">
         {dataSobreMi.nombre} {dataSobreMi.apellido}

@@ -4,7 +4,7 @@ $pantalla-chica: 400px;
 @mixin descripcion {
   font-size: 18px;
   text-align: center;
-  font-family: "Bricolage Grotesque", sans-serif;
+  font-family: $text-font;
   color: $text-color;
   font-weight: 200;
   margin-bottom: 0px;
@@ -14,7 +14,7 @@ $pantalla-chica: 400px;
   font-size: 8px;
 }
 .seccionSobreMi {
-  height: 95vh;
+  height: 99vh;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -28,7 +28,7 @@ $pantalla-chica: 400px;
   }
 
   .nombre {
-    font-family: "Bricolage Grotesque", sans-serif;
+    font-family: $text-font;
     color: $text-color;
     font-size: 30px;
     letter-spacing: 1px;
