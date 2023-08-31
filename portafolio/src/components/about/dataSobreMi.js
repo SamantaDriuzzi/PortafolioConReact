@@ -1,10 +1,14 @@
 import foto from "../../images/fotoPerfil.jpg";
 
 const dataSobreMi = {
+  imagen: foto,
   nombre: "SAMANTA",
   apellido: "DRIUZZI",
-  imagen: foto,
-  descripcion: "cositas, cositas",
+  saludo: "Hola! Soy",
+  descripcion:
+    "Después de muchos años en el área de ventas, me aventuro al mundo de la programación mezclando todos mis dones para este hermoso camino.",
+  segundaDescripcion:
+    "Soy de Mendoza, Argentina. Me gusta caminar entre la montaña, explorar nuevos lugares y disfrutar la buena compañia.",
 };
 
 export default dataSobreMi;
