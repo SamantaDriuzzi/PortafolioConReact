@@ -11,11 +11,6 @@
   .navbar-left {
     display: flex;
     align-items: center;
-
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
   }
 
   .navbar-right {
@@ -30,6 +25,11 @@
       cursor: pointer;
       font-size: 16px;
       font-family: $text-font;
+    }
+    @media (max-width: $pantalla-chica) {
+      .nav-button {
+        font-size: 9px;
+      }
     }
   }
 }
