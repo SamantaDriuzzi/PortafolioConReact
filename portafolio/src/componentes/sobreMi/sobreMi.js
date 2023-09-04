@@ -15,8 +15,11 @@ const SobreMi = () => {
       </h1>
 
       <div className="contenedor-descripcion">
-        <h3 className="descripcion">{dataSobreMi.descripcion}</h3>
-        <h3 className="descripcion">{dataSobreMi.segundaDescripcion}</h3>
+        <h3 className="descripcion">
+          {dataSobreMi.descripcion[0]}
+          <br />
+          {dataSobreMi.descripcion[1]}
+        </h3>
       </div>
     </section>
   );

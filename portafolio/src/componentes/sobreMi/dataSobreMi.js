@@ -5,10 +5,10 @@ const dataSobreMi = {
   nombre: "SAMANTA",
   apellido: "DRIUZZI",
   saludo: "Hola! Soy",
-  descripcion:
+  descripcion: [
     "Después de muchos años en el área de ventas, me aventuro al mundo de la programación mezclando todos mis dones para este hermoso camino.",
-  segundaDescripcion:
     "Soy de Mendoza, Argentina. Me gusta caminar entre la montaña, explorar nuevos lugares y disfrutar la buena compañia.",
+  ],
 };
 
 export default dataSobreMi;
