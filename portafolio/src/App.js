@@ -1,8 +1,8 @@
-import "./App.css";
-import SobreMi from "./components/about/sobreMi";
-import Navbar from "./components/header/navbar";
+import SobreMi from "./componentes/sobreMi/sobreMi";
+import Navbar from "./componentes/barraNavegacion/navbar";
+import ProyectosBanner from "./componentes/proyectos/proyectosBanner";
+
 import Home from "./components/home/home";
-import ProyectosBanner from "./components/proyects/proyectosBanner";
 
 export default function App() {
   return (

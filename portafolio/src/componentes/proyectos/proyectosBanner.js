@@ -1,6 +1,6 @@
 import React from "react";
 import Proyectos from "./proyectos";
-import "../../scss/components/proyectos.scss";
+import "../../scss/componentes/proyectos/proyectos.scss";
 
 const ProyectosBanner = () => {
   return (

@@ -1,21 +1,20 @@
-@import "../variables";
+@import "../../variables";
 
 .navbar {
   display: flex;
+  position: sticky;
+
   justify-content: space-between;
   align-items: center;
   padding: 20px;
   background-color: $primary-color;
   color: $text-color;
+  top: 0;
+  z-index: 1000;
 
   .navbar-left {
     display: flex;
     align-items: center;
-
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
   }
 
   .navbar-right {
@@ -29,6 +28,12 @@
       color: $text-color;
       cursor: pointer;
       font-size: 16px;
+      font-family: $text-font;
+    }
+    @media (max-width: $pantalla-chica) {
+      .nav-button {
+        font-size: 9px;
+      }
     }
   }
 }

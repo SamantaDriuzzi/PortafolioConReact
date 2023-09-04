@@ -1,0 +1,46 @@
+@import "../../variables";
+
+.seccionSobreMi {
+  height: 99vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../../imagenes/sobreMi.png);
+  background-size: cover;
+  background-position: bottom center;
+
+  .saludo {
+    @include descripcion();
+  }
+
+  .nombre {
+    font-family: $text-font;
+    color: $text-color;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin: -5px auto 0px;
+  }
+
+  .imgPerfil {
+    height: 25%;
+    border-radius: 50%;
+    border: 1px solid $primary-color;
+    margin-top: 15px;
+  }
+
+  .contenedor-descripcion {
+    width: 40%;
+    justify-content: center;
+    font-size: 24px;
+    text-align: center;
+
+    .descripcion {
+      @include descripcion();
+    }
+
+    @media (max-width: $pantalla-chica) {
+      @include pantalla-chica();
+    }
+  }
+}
