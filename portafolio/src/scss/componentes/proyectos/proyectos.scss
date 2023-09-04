@@ -1,4 +1,4 @@
-@import "../variables";
+@import "../../variables";
 
 *,
 *::before,
@@ -9,7 +9,7 @@
 .proyectos-banner {
   height: 100vh;
   margin-top: -50px;
-  background-image: url(../../images/imagenProyectos.png);
+  background-image: url(../../../imagenes/imagenProyectos.png);
   background-size: cover;
   background-position: center;
 

@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/scss";
 import "swiper/scss/effect-cards";
-import "../../scss/components/proyectos.scss";
+import "../../scss/componentes/proyectos/proyectos.scss";
 import { EffectCards } from "swiper/modules";
 import listaDeProyectos from "./listaDeProyectos";
 
@@ -13,7 +13,12 @@ export default function Proyectos() {
    * Permite la inteacción con el usuario logrando deslizar cada tarjeta a ambos lados.
    */
   return (
-    <Swiper effect={"cards"} grabCursor={true} modules={[EffectCards]} loop='true'> 
+    <Swiper
+      effect={"cards"}
+      grabCursor={true}
+      modules={[EffectCards]}
+      loop="true"
+    >
       {listaDeProyectos.map((proyecto) => (
         <SwiperSlide key={proyecto.key}>
           <img className="imagen" src={proyecto.imagen} alt={proyecto.nombre} />

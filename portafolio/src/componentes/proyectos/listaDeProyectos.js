@@ -1,7 +1,7 @@
-import bear from "../../images/mismoTamaño/bear-capture-proyect 1.png";
-import market from "../../images/mismoTamaño/product-pag-capture 1.png";
-import tribute from "../../images/mismoTamaño/tributePag-capture-project 1.png";
-import portfolio from "../../images/mismoTamaño/portfolio-project-capture 1.png";
+import bear from "../../imagenes/mismoTamaño/bear-capture-proyect 1.png";
+import market from "../../imagenes/mismoTamaño/product-pag-capture 1.png";
+import tribute from "../../imagenes/mismoTamaño/tributePag-capture-project 1.png";
+import portfolio from "../../imagenes/mismoTamaño/portfolio-project-capture 1.png";
 
 const proyectosLista = [
   {

@@ -1,6 +1,6 @@
 import React from "react";
-import "../../scss/components/navbar.scss";
-import SvgComponent from "./logo/svgComponent";
+import "../../scss/componentes/barraNavegacion/navbar.scss";
+import ComponenteLogo from "./logo/componenteLogo";
 
 /**
  * Este componente toma el ancho de la pantalla del navegador
@@ -12,18 +12,25 @@ import SvgComponent from "./logo/svgComponent";
 const Navbar = () => {
   const windowWidth = window.innerWidth;
   const minWidthToShowSvg = 768;
+  const secciones = [
+    "Inicio",
+    "Proyectos",
+    "Habilidades",
+    "Sobre mi",
+    "Contacto",
+  ];
 
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        {windowWidth >= minWidthToShowSvg && <SvgComponent />}
+        {windowWidth >= minWidthToShowSvg && <ComponenteLogo />}
       </div>
       <div className="navbar-right">
-        <button className="nav-button">Inicio</button>
-        <button className="nav-button">Proyectos</button>
-        <button className="nav-button">Habilidades</button>
-        <button className="nav-button">Sobre mi</button>
-        <button className="nav-button">Contacto</button>
+        {secciones.map((seccion, index) => (
+          <button key={`${index}_${seccion}`} className="nav-button">
+            {seccion}
+          </button>
+        ))}
       </div>
     </nav>
   );

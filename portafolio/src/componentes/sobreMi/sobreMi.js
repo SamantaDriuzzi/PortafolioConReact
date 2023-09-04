@@ -1,5 +1,5 @@
 import dataSobreMi from "./dataSobreMi";
-import "../../scss/components/sobreMi.scss";
+import "../../scss/componentes/sobreMi/sobreMi.scss";
 
 const SobreMi = () => {
   return (
