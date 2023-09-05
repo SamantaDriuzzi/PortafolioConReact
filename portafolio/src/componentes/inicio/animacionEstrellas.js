@@ -1,7 +1,7 @@
 import React from "react";
-import "../../scss/components/starts.scss";
+import "../../scss/componentes/inicio/animacionEstrellas.scss";
 
-const StarAnimation = () => {
+const AnimacionEstrellas = () => {
   const createStars = () => {
     const stars = [];
     const shootingStarDelay = Math.random() * 30 + 5;
@@ -37,4 +37,4 @@ const StarAnimation = () => {
   return <div className="star-container">{createStars()}</div>;
 };
 
-export default StarAnimation;
+export default AnimacionEstrellas;
