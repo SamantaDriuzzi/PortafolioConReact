@@ -16,7 +16,7 @@ const StarAnimation = () => {
       stars.push(<div key={i} className="star" style={style} />);
     }
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 1; i++) {
       const shootingStarStyle = {
         top: `${Math.random() * 100}%`,
         right: `${Math.random() * 30}%`,
@@ -24,11 +24,7 @@ const StarAnimation = () => {
       };
 
       stars.push(
-        <div
-          key="shooting-star"
-          className="star-fugaz"
-          style={shootingStarStyle}
-        />
+        <div key="star" className="star-fugaz" style={shootingStarStyle} />
       );
     }
     return stars;

@@ -6,17 +6,20 @@ const dataIcono = [
   {
     svg: github,
     nombre: "GitHub",
-    URL: "url",
+    URL: "https://github.com/SamantaDriuzzi",
+    tooltip: "Visita mi perfil en GitHub",
   },
   {
     svg: linkedin,
     nombre: "Linkedin",
-    URL: "url",
+    URL: "https://www.linkedin.com/in/samanta-driuzzi/",
+    tooltip: "Visita mi perfil en Linkedin",
   },
   {
     svg: mail,
     nombre: "Mail",
-    URL: "url",
+    URL: "mailto:driuzzi.samanta.mayra@gmail.com",
+    tooltip: "Envíame un correo electrónico",
   },
 ];
 export default dataIcono;

@@ -17,6 +17,7 @@ const Contacto = () => {
               archivo={icono.svg}
               nombre={icono.nombre}
               enlace={icono.URL}
+              tooltip={icono.tooltip}
               key={`${index}_${icono.nombre}`}
             />
           </div>

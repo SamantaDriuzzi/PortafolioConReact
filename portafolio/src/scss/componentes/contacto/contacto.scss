@@ -17,16 +17,20 @@
 
   .contenedor-iconos {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: calc(80vw * 0.2);
+    margin-top: calc(25vw * 0.2);
 
     .icono {
       width: 80px;
       padding: 10px;
       text-align: center;
       margin: 0 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .icono :hover {
+      transform: scale(1.2);
     }
   }
   @media screen and (max-width: 400px) {
