@@ -1,0 +1,27 @@
+@import "../../variables";
+
+.barra-progreso {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  .habilidad {
+    font-weight: bold;
+    color: $text-color;
+  }
+
+  .progreso {
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 59, 126, 0.182);
+
+    .progreso-interno {
+      height: 100%;
+      background-color: $secundary-color;
+      transition: width 12s ease-in-out;
+      border-radius: 10px;
+    }
+  }
+}
