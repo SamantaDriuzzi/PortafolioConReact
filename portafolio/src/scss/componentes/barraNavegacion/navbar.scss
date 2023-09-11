@@ -20,7 +20,7 @@
   .navbar-right {
     display: flex;
 
-    .nav-button {
+    .nav-link {
       margin-left: 15px;
       padding: 5px 10px;
       background-color: transparent;
@@ -29,9 +29,10 @@
       cursor: pointer;
       font-size: 16px;
       font-family: $text-font;
+      text-decoration: none;
     }
     @media (max-width: $pantalla-chica) {
-      .nav-button {
+      .nav-link {
         font-size: 9px;
       }
     }

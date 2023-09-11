@@ -1,6 +1,7 @@
 import React from "react";
 import "../../scss/componentes/barraNavegacion/navbar.scss";
 import ComponenteLogo from "./logo/componenteLogo";
+import { Link, Outlet } from "react-router-dom";
 
 /**
  * Este componente toma el ancho de la pantalla del navegador
@@ -13,26 +14,33 @@ const Navbar = () => {
   const windowWidth = window.innerWidth;
   const minWidthToShowSvg = 768;
   const secciones = [
-    "Inicio",
-    "Proyectos",
-    "Habilidades",
-    "Sobre mi",
-    "Contacto",
+    { label: "Inicio", path: "/" },
+    { label: "Proyectos", path: "/proyectos" },
+    { label: "Habilidades", path: "/habilidades" },
+    { label: "Sobre mi", path: "/sobreMi" },
+    { label: "Contacto", path: "/contacto" },
   ];
 
   return (
-    <nav className="navbar">
-      <div className="navbar-left">
-        {windowWidth >= minWidthToShowSvg && <ComponenteLogo />}
-      </div>
-      <div className="navbar-right">
-        {secciones.map((seccion, index) => (
-          <button key={`${index}_${seccion}`} className="nav-button">
-            {seccion}
-          </button>
-        ))}
-      </div>
-    </nav>
+    <div>
+      <nav className="navbar">
+        <div className="navbar-left">
+          {windowWidth >= minWidthToShowSvg && <ComponenteLogo />}
+        </div>
+        <div className="navbar-right">
+          {secciones.map((seccion, index) => (
+            <Link
+              key={`${index}_${seccion.label}`}
+              to={seccion.path}
+              className="nav-link"
+            >
+              {seccion.label}
+            </Link>
+          ))}
+        </div>
+      </nav>
+      <Outlet />
+    </div>
   );
 };
 
