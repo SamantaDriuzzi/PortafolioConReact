@@ -1,4 +1,4 @@
-import dataSobreMi from "./dataSobreMi";
+import dataSobreMi from "../../constantes/dataSobreMi";
 import "../../scss/componentes/sobreMi/sobreMi.scss";
 
 const SobreMi = () => {

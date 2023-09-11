@@ -1,6 +1,6 @@
 import "../../scss/componentes/contacto/contacto.scss";
 import Icono from "./iconos/icono";
-import dataIcono from "./iconos/dataIcono";
+import dataIcono from "../../constantes/dataIcono";
 
 const Contacto = () => {
   return (

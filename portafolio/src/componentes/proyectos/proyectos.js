@@ -3,7 +3,7 @@ import "swiper/scss";
 import "swiper/scss/effect-cards";
 import "../../scss/componentes/proyectos/proyectos.scss";
 import { EffectCards } from "swiper/modules";
-import listaDeProyectos from "./listaDeProyectos";
+import listaDeProyectos from "../../constantes/listaDeProyectos";
 
 export default function Proyectos() {
   /**
