@@ -1,19 +1,21 @@
-import SobreMi from "./componentes/sobreMi/sobreMi";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./componentes/barraNavegacion/navbar";
-import ProyectosBanner from "./componentes/proyectos/proyectosBanner";
 import Inicio from "./componentes/inicio/inicio";
-import Contacto from "./componentes/contacto/contacto";
+import ProyectosBanner from "./componentes/proyectos/proyectosBanner";
 import Habilidades from "./componentes/habilidades/habilidades";
+import SobreMi from "./componentes/sobreMi/sobreMi";
+import Contacto from "./componentes/contacto/contacto";
 
 export default function App() {
   return (
-    <div>
-      <Navbar />
-      <Inicio />
-      <ProyectosBanner />
-      <Habilidades />
-      <SobreMi />
-      <Contacto />
-    </div>
+    <Routes>
+      <Route path="/" element={<Navbar />}>
+        <Route path="/" element={<Inicio />} />
+        <Route path="/proyectos" element={<ProyectosBanner />} />
+        <Route path="/habilidades" element={<Habilidades />} />
+        <Route path="/sobreMi" element={<SobreMi />} />
+        <Route path="/contacto" element={<Contacto />} />
+      </Route>
+    </Routes>
   );
 }
