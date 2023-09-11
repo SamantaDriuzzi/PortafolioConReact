@@ -1,6 +1,6 @@
-import github from "../../../imagenes/Iconos/github.svg";
-import linkedin from "../../../imagenes/Iconos/linkedin.svg";
-import mail from "../../../imagenes/Iconos/mail.svg";
+import github from "../imagenes/Iconos/github.svg";
+import linkedin from "../imagenes/Iconos/linkedin.svg";
+import mail from "../imagenes/Iconos/mail.svg";
 
 const dataIcono = [
   {

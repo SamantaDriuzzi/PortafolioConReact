@@ -1,4 +1,4 @@
-import foto from "../../imagenes/fotoPerfil.jpg";
+import foto from "../imagenes/fotoPerfil.jpg";
 
 const dataSobreMi = {
   imagen: foto,
