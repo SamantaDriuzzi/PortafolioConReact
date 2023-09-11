@@ -1,14 +1,16 @@
 import SobreMi from "./componentes/sobreMi/sobreMi";
 import Navbar from "./componentes/barraNavegacion/navbar";
 import ProyectosBanner from "./componentes/proyectos/proyectosBanner";
-import Home from "./components/home/home";
+import Inicio from "./componentes/inicio/inicio";
+import Habilidades from "./componentes/habilidades/habilidades";
 export default function App() {
   return (
     <div>
       <Navbar />
-      <Home />
-      <SobreMi />
+      <Inicio />
       <ProyectosBanner />
+      <Habilidades />
+      <SobreMi />
     </div>
   );
 }

@@ -1,5 +1,34 @@
-@import "../variables";
+@import "../../variables";
 
 .habilidades-banner {
-  width: auto;
+  height: 90vh;
+  background-image: url(../../../imagenes/fondoHabilidades.png);
+  background-position: center;
+  background-size: cover;
+
+  .contenedor-banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .contenedor-titulo {
+      @include contenedor-titulo;
+
+      .titulo-seccion {
+        @include titulo-seccion();
+      }
+      @media screen and (max-width: 400px) {
+        .titulo-seccion {
+          font-size: 26px;
+        }
+      }
+    }
+    .contenedor-barras {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0 0 20px;
+      width: 40%;
+    }
+  }
 }
