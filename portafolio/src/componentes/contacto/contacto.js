@@ -12,13 +12,12 @@ const Contacto = () => {
       </div>
       <div className="contenedor-iconos">
         {dataIcono.map((icono, index) => (
-          <div className="icono">
+          <div className="icono" key={`${index}_${icono.nombre}`}>
             <Icono
               archivo={icono.svg}
               nombre={icono.nombre}
               enlace={icono.URL}
               tooltip={icono.tooltip}
-              key={`${index}_${icono.nombre}`}
             />
           </div>
         ))}

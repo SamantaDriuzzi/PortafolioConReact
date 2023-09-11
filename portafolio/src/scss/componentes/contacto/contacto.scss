@@ -33,15 +33,9 @@
       transform: scale(1.2);
     }
   }
-  @media screen and (max-width: 400px) {
-    .contenedor-iconos {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 16vw;
-      align-content: center;
-      flex-wrap: wrap;
-    }
-  }
+  // @media screen and (max-width: 400px) {
+  //   .contenedor-iconos {
+  //     @include pantalla-chica;
+  //   }
+  // }
 }
