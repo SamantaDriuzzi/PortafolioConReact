@@ -18,6 +18,7 @@ const SobreMi = () => {
         <h3 className="descripcion">
           {dataSobreMi.descripcion[0]}
           <br />
+          <br />
           {dataSobreMi.descripcion[1]}
         </h3>
       </div>

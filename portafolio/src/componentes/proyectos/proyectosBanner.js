@@ -13,7 +13,6 @@ const ProyectosBanner = () => {
           Explora algunos de los proyectos en los que he trabajado.
         </p>
       </div>
-
       <Proyectos />
     </section>
   );

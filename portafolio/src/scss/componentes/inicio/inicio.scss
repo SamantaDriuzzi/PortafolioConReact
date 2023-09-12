@@ -1,6 +1,5 @@
 .seccionHome {
-  height: 90vh;
-  top: 0;
+  height: calc(100vh - 80px);
   background-image: url("../../../imagenes/fondoPortafolio.png");
   background-size: cover;
   background-position: center;

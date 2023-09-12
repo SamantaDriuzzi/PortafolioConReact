@@ -3,14 +3,14 @@
 .navbar {
   display: flex;
   position: sticky;
-
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   background-color: $primary-color;
   color: $text-color;
   top: 0;
   z-index: 1000;
+  height: 60px;
 
   .navbar-left {
     display: flex;

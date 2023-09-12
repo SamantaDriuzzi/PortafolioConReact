@@ -23,7 +23,6 @@ export default function Proyectos() {
         <SwiperSlide key={proyecto.key}>
           <img className="imagen" src={proyecto.imagen} alt={proyecto.nombre} />
           <div className="contenedor-descripcion-proyecto">
-            <h3 className="nombre-proyecto">{proyecto.nombre}</h3>
             <h4 className="descripcion-proyecto">{proyecto.descripcion}</h4>
           </div>
         </SwiperSlide>

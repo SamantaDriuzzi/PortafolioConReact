@@ -7,10 +7,9 @@
 }
 
 .proyectos-banner {
-  height: 90vh;
+  height: calc(100vh - 80px);
   background-image: url(../../../imagenes/imagenProyectos.png);
   background-size: cover;
-  background-position: center;
   background-position: bottom center;
 
   .contenedor-banner {
@@ -65,24 +64,15 @@
       left: 0;
       width: 100%;
       bottom: 0;
-      padding: 88px 16px 24px;
+      padding: 28px 16px 24px;
       box-sizing: border-box;
       background: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 1.75)
+        rgba(0, 0, 0, 0.825),
+        rgb(0, 0, 0)
       );
       border-radius: 0 0 8px 8px;
-
-      .nombre-proyecto {
-        color: $text-color;
-        font-family: $text-font;
-        width: 100%;
-        margin: 0;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 1.1;
-      }
 
       .descripcion-proyecto {
         font-family: $text-font;
