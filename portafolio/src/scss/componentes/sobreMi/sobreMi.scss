@@ -1,7 +1,7 @@
 @import "../../variables";
 
 .seccionSobreMi {
-  height: 99vh;
+  height: calc(100vh - 80px);
   display: flex;
   justify-content: flex-start;
   flex-direction: column;

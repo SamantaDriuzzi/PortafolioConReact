@@ -1,7 +1,7 @@
 @import "../../variables";
 
 .contacto-banner {
-  height: 90vh;
+  height: calc(100vh - 80px);
   background-image: url(../../../imagenes/fondoContacto.png);
   background-size: cover;
   background-position: center;
@@ -9,8 +9,14 @@
   .contenedor-banner {
     .contenedor-titulo {
       @include contenedor-titulo;
+
       .titulo-seccion {
-        @include titulo-seccion;
+        @include titulo-seccion();
+      }
+      @media screen and (max-width: 400px) {
+        .titulo-seccion {
+          font-size: 26px;
+        }
       }
     }
   }
@@ -33,9 +39,4 @@
       transform: scale(1.2);
     }
   }
-  // @media screen and (max-width: 400px) {
-  //   .contenedor-iconos {
-  //     @include pantalla-chica;
-  //   }
-  // }
 }

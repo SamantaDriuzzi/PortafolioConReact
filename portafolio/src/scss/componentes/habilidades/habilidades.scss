@@ -1,7 +1,7 @@
 @import "../../variables";
 
 .habilidades-banner {
-  height: 90vh;
+  height: calc(100vh - 80px);
   background-image: url(../../../imagenes/fondoHabilidades.png);
   background-position: center;
   background-size: cover;
