@@ -1,0 +1,83 @@
+@import "../variables";
+
+.boton-link {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0px 0px -25px;
+
+  button {
+    width: auto;
+    background-color: black;
+    font-family: $text-font;
+    color: $text-color;
+  }
+  .btn {
+    display: inline-block;
+    color: #ffffff;
+    padding: 22px;
+    position: relative;
+    letter-spacing: 1px;
+
+    &__circle,
+    &__text,
+    &__white-circle {
+      position: absolute;
+    }
+
+    &__circle {
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-radius: 100%;
+      width: 100%;
+      box-shadow: -12px -1px 5px -2px #fff;
+      transition: 0.3s linear;
+    }
+
+    &__white-circle {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      width: 56px;
+      height: 56px;
+      border-radius: 100%;
+      background: #ffffff;
+      display: flex;
+      transition: 0.3s ease-in-out;
+      box-shadow: 0px 0px 10px 5px #fff;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        margin: auto;
+      }
+    }
+
+    &__text {
+      top: 50%;
+      transform: translate(-9%, -50%);
+      white-space: nowrap;
+      z-index: 2;
+      padding: 24px 8px;
+      transition: 0.3s linear;
+      font-family: $text-font;
+      font-size: 16px;
+    }
+
+    &:hover {
+      .btn__circle {
+        transform: scale(0);
+      }
+
+      .btn__white-circle {
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      .btn__text {
+        transform: translate(40px, -50%);
+      }
+    }
+  }
+}
