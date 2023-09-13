@@ -36,11 +36,9 @@ export default function Proyectos() {
           </SwiperSlide>
         ))}
       </Swiper>
-
       <BotonLink
         titulo={"Ver proyecto en Github"}
         toLink={listaDeProyectos[proyectoActual].githubLink}
-        // clave={proyectoActual.githubLink}
       />
     </div>
   );
