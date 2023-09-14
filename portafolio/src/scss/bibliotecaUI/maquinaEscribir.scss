@@ -4,5 +4,13 @@
   font-family: $text-font;
   color: $text-color;
   text-align: center;
-  transform: rotate(343deg);
+  transform: rotate(347deg);
+  width: 180px;
+}
+@media screen and (max-width: 400px) {
+  .frase-maquina-escribir {
+    font-size: smaller;
+    width: 120px;
+    margin-left: 50px;
+  }
 }
