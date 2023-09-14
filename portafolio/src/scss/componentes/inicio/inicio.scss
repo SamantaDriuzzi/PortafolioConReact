@@ -13,7 +13,22 @@
     display: flex;
     align-content: center;
     flex-wrap: wrap;
-    margin-right: 215px;
+    margin-right: 210px;
+
+    .imagen-galaxia {
+      width: 45px;
+      margin: 90px 0px 0px -90px;
+      animation: rotate 15s linear infinite;
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
   }
 
   .contenedor-btn-link {

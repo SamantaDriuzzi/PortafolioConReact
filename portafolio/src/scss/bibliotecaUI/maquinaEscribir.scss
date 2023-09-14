@@ -2,10 +2,11 @@
 
 .frase-maquina-escribir {
   font-family: $text-font;
+  letter-spacing: 2px;
   color: $text-color;
   text-align: center;
   transform: rotate(347deg);
-  width: 180px;
+  width: 160px;
 }
 @media screen and (max-width: 400px) {
   .frase-maquina-escribir {
