@@ -3,4 +3,19 @@
   background-image: url("../../../imagenes/fondoPortafolio.png");
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  .contenedor-maquina-escribir {
+    height: 100%;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contenedor-btn-link {
+    margin-bottom: 50px;
+  }
 }
