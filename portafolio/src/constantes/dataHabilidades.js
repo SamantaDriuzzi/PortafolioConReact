@@ -3,8 +3,8 @@ export const habilidadesDuras = [
     habilidad: "HTML y CSS",
     porcentaje: 90,
     tooltip: [
-      '"Las raices del hermoso árbol que veo crecer."',
-      'Aprendí en "freeCodeCamp" y llevando la teoria a la práctica en cada desafío.',
+      '"Las raíces del hermoso árbol que veo crecer."',
+      'Aprendí en "freeCodeCamp" y llevando la teoría a la práctica en cada desafío.',
     ],
   },
   {
@@ -12,7 +12,7 @@ export const habilidadesDuras = [
     porcentaje: 75,
     tooltip: [
       '"El tallo del árbol rompiendo para crecer."',
-      '"Crecer duele" dice el dicho y JavaScrip me lo demostró, pero siempre conciente de que era fundamental en el proceso.',
+      '"Crecer duele" dice el dicho y JavaScrip me lo demostró, pero siempre consciente de que era fundamental en el proceso.',
     ],
   },
   {
@@ -20,7 +20,7 @@ export const habilidadesDuras = [
     porcentaje: 85,
     tooltip: [
       '"Lluvia refrescante."',
-      'React trajo calma, orden, permanencia y "las primeras flores" que se convertirian en frutos mañana.',
+      'React trajo calma, orden, permanencia y "las primeras flores" que se convertirían en frutos mañana.',
     ],
   },
   {
