@@ -24,4 +24,12 @@
       border-radius: 10px;
     }
   }
+  .icono-tooltip {
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 15px;
+    border-radius: 12px;
+    width: 300px;
+    font-size: 22px;
+  }
 }
