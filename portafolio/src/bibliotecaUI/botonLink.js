@@ -4,7 +4,6 @@ const BotonLink = ({ titulo, toLink }) => {
   return (
     <div className="boton-link">
       <a
-        // href={`${archivo[objeto]}.${clave}`}
         href={toLink}
         target="_blank"
         rel="noopener noreferrer"

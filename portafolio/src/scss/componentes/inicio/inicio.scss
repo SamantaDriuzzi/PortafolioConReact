@@ -29,6 +29,12 @@
         }
       }
     }
+    @media screen and (max-width: 400px) {
+      .imagen-galaxia {
+        width: 30px;
+        margin: 40px 0px 0px -60px;
+      }
+    }
   }
 
   .contenedor-btn-link {
