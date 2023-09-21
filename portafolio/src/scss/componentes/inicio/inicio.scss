@@ -3,4 +3,41 @@
   background-image: url("../../../imagenes/fondoPortafolio.png");
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  .contenedor-maquina-escribir {
+    height: 100%;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-right: 210px;
+
+    .imagen-galaxia {
+      width: 45px;
+      margin: 90px 0px 0px -90px;
+      animation: rotate 15s linear infinite;
+
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    }
+    @media screen and (max-width: 400px) {
+      .imagen-galaxia {
+        width: 30px;
+        margin: 40px 0px 0px -60px;
+      }
+    }
+  }
+
+  .contenedor-btn-link {
+    margin-bottom: 50px;
+  }
 }
