@@ -31,7 +31,7 @@ const ProyectosBanner = () => {
     }, 2000);
 
     return () => clearTimeout(timer);
-  }, [])
+  }, []);
 
   return (
     <section className="proyectos-banner">
@@ -43,11 +43,7 @@ const ProyectosBanner = () => {
           Explora algunos de los proyectos en los que he trabajado.
         </p>
       </div>
-      {loading ? (
-        <Loader />
-      ) : (
-      <Proyectos />
-      )}
+      {loading ? <Loader /> : <Proyectos />}
     </section>
   );
 };
