@@ -1,38 +1,11 @@
 import "../../scss/componentes/contacto/contacto.scss";
 import Icono from "./iconos/icono";
 import dataIcono from "../../constantes/dataIcono";
-import { useEffect, useState } from "react";
 import Loader from "../../bibliotecaUI/loader";
+import useVelocidadConexion from "../../hooks/useVelocidadConexion";
 
 const Contacto = () => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const verificaVelocidadConexion = () => {
-      const conexión =
-        navigator.connection ||
-        navigator.mozConnection ||
-        navigator.webkitConnection;
-
-      if (conexión) {
-        const velocidadMbps = conexión.downlink;
-
-        if (velocidadMbps < 2) {
-          setLoading(true);
-        } else {
-          setLoading(false);
-        }
-      }
-    };
-
-    verificaVelocidadConexion();
-
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
+  const loading = useVelocidadConexion();
 
   return (
     <section className="contacto-banner">
