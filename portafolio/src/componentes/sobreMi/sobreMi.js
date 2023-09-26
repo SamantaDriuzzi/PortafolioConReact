@@ -4,23 +4,22 @@ import "../../scss/componentes/sobreMi/sobreMi.scss";
 const SobreMi = () => {
   return (
     <section className="seccionSobreMi" id="sobreMI">
-      <img
-        className="imgPerfil"
-        src={dataSobreMi.imagen}
-        alt="Foto de perfil"
-      />
-      <h3 className="saludo">{dataSobreMi.saludo}</h3>
-      <h1 className="nombre">
-        {dataSobreMi.nombre} {dataSobreMi.apellido}
-      </h1>
-
+      <div className="contenedor-saludo">
+        <div className="saludo">
+          <ul>
+            <li>{dataSobreMi.saludo[0]}</li>
+            <li> {dataSobreMi.saludo[1]}</li>
+            <li>{dataSobreMi.nombre}</li>
+          </ul>
+        </div>
+      </div>
       <div className="contenedor-descripcion">
-        <h3 className="descripcion">
+        <div className="descripcion">
           {dataSobreMi.descripcion[0]}
           <br />
           <br />
           {dataSobreMi.descripcion[1]}
-        </h3>
+        </div>
       </div>
     </section>
   );

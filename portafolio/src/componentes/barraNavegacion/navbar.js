@@ -1,18 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../scss/componentes/barraNavegacion/navbar.scss";
-import ComponenteLogo from "./logo/componenteLogo";
+import BurguerButton from "./menu/botonHambur";
 import { Link, Outlet } from "react-router-dom";
+import ComponenteLogo from "./logo/componenteLogo";
 
-/**
- * Este componente toma el ancho de la pantalla del navegador
- * y luego renderiza o no el componente 'SvgComponent'. En el caso
- * de que sea menor a 768px, el logo no se renderiza.
- * Esto es para no robar mas espacio a los demás elementos de la navbar.
- * @returns
- */
-const Navbar = () => {
-  const windowWidth = window.innerWidth;
+function Navbar() {
+  //** El useEffect se utiliza para realizar dos tareas principales:
+  // -Obtener el ancho de la ventana inicial:
+  //    Inicializamos el estado #windowWidth con el ancho de la ventana
+  //    del navegador al cargar el componente.
+  // -Escuchar cambios en el tamaño de la ventana:
+  //    Cada vez que cambie el tamaño de la ventana del navegador,
+  //    se llamará a la función #handleResize.
+  //*/
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const minWidthToShowSvg = 768;
+  const [clicked, setClicked] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
   const secciones = [
     { label: "Inicio", path: "/" },
     { label: "Proyectos", path: "/proyectos" },
@@ -20,28 +39,33 @@ const Navbar = () => {
     { label: "Sobre mi", path: "/sobreMi" },
     { label: "Contacto", path: "/contacto" },
   ];
-
+  const isSmallScreen = windowWidth < minWidthToShowSvg;
   return (
     <div>
-      <nav className="navbar">
+      <div className={`nav-container ${clicked ? "active" : ""}`}>
         <div className="navbar-left">
           {windowWidth >= minWidthToShowSvg && <ComponenteLogo />}
         </div>
-        <div className="navbar-right">
+        <div className={`links ${clicked ? "active" : ""}`}>
           {secciones.map((seccion, index) => (
             <Link
               key={`${index}_${seccion.label}`}
               to={seccion.path}
-              className="nav-link"
+              className="link"
+              onClick={isSmallScreen ? handleClick : undefined}
             >
               {seccion.label}
             </Link>
           ))}
         </div>
-      </nav>
+        <div className="burguer">
+          <BurguerButton clicked={clicked} handleClick={handleClick} />
+        </div>
+        <div className={`bg-div ${clicked ? "active" : ""}`}></div>
+      </div>
       <Outlet />
     </div>
   );
-};
+}
 
 export default Navbar;
