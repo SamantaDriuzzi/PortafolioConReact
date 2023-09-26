@@ -1,11 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-
+import Navbar from "./componentes/barraNavegacion/navbar";
 import Inicio from "./componentes/inicio/inicio";
 import ProyectosBanner from "./componentes/proyectos/proyectosBanner";
 import Habilidades from "./componentes/habilidades/habilidades";
 import SobreMi from "./componentes/sobreMi/sobreMi";
 import Contacto from "./componentes/contacto/contacto";
-import Navbar from "./componentes/barraNavegacion/navbar";
 
 export default function App() {
   return (

@@ -20,7 +20,7 @@ export default function Proyectos() {
         effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
-        loop="true"
+        loop={true}
         onSlideChange={(swiper) => cambiarProyectoActual(swiper)}
       >
         {listaDeProyectos.map((proyecto) => (

@@ -1,8 +1,11 @@
-import React from "react";
 import Proyectos from "./proyectos";
 import "../../scss/componentes/proyectos/proyectos.scss";
+import Loader from "../../bibliotecaUI/loader";
+import useVelocidadConexion from "../../hooks/useVelocidadConexion";
 
 const ProyectosBanner = () => {
+  const loading = useVelocidadConexion();
+
   return (
     <section className="proyectos-banner">
       <div className="contenedor-banner">
@@ -13,7 +16,7 @@ const ProyectosBanner = () => {
           Explora algunos de los proyectos en los que he trabajado.
         </p>
       </div>
-      <Proyectos />
+      {loading ? <Loader /> : <Proyectos />}
     </section>
   );
 };
