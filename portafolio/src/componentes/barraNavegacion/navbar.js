@@ -1,34 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../../scss/componentes/barraNavegacion/navbar.scss";
 import BurguerButton from "./menu/botonHambur";
 import { Link, Outlet } from "react-router-dom";
 import ComponenteLogo from "./logo/componenteLogo";
+import usePantallaChica from "../../hooks/usePantallaChica";
 
 function Navbar() {
-  //** El useEffect se utiliza para realizar dos tareas principales:
-  // -Obtener el ancho de la ventana inicial:
-  //    Inicializamos el estado #windowWidth con el ancho de la ventana
-  //    del navegador al cargar el componente.
-  // -Escuchar cambios en el tamaño de la ventana:
-  //    Cada vez que cambie el tamaño de la ventana del navegador,
-  //    se llamará a la función #handleResize.
-  //*/
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-  const minWidthToShowSvg = 768;
   const [clicked, setClicked] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   const handleClick = () => {
     setClicked(!clicked);
   };
@@ -39,12 +17,13 @@ function Navbar() {
     { label: "Sobre mi", path: "/sobreMi" },
     { label: "Contacto", path: "/contacto" },
   ];
-  const isSmallScreen = windowWidth < minWidthToShowSvg;
+  const { windowWidth, minWidth, isSmallScreen } = usePantallaChica();
+
   return (
     <div>
       <div className={`nav-container ${clicked ? "active" : ""}`}>
         <div className="navbar-left">
-          {windowWidth >= minWidthToShowSvg && <ComponenteLogo />}
+          {windowWidth >= minWidth && <ComponenteLogo />}
         </div>
         <div className={`links ${clicked ? "active" : ""}`}>
           {secciones.map((seccion, index) => (
