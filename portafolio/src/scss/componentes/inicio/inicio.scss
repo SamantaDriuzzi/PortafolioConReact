@@ -42,7 +42,8 @@
   .contenedor-btn-link {
     margin-bottom: 50px;
   }
-  @media (min-width: 400px) {
+
+  @media (max-width: 400px) {
     .contenedor-btn-link {
       margin-bottom: 100px;
     }
