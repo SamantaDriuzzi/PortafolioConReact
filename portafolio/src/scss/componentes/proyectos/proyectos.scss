@@ -1,41 +1,10 @@
 @import "../../variables";
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 .proyectos-banner {
   height: calc(100vh - 80px);
   background-image: url(../../../imagenes/imagenProyectos.png);
   background-size: cover;
   background-position: center;
-
-  .contenedor-banner {
-    .contenedor-titulo {
-      @include contenedor-titulo;
-
-      .titulo-seccion {
-        @include titulo-seccion();
-      }
-      @media screen and (max-width: 400px) {
-        .titulo-seccion {
-          font-size: 26px;
-        }
-      }
-    }
-
-    .parrafo-seccion {
-      @include descripcion();
-    }
-    @media screen and (max-width: 400px) {
-      .parrafo-seccion {
-        font-size: 17px;
-        text-align: center;
-      }
-    }
-  }
 }
 
 .swiper {

@@ -37,7 +37,7 @@ export default function Proyectos() {
         ))}
       </Swiper>
       <BotonLink
-        titulo={"Ver proyecto en Github"}
+        titulo={"Ver proyecto"}
         toLink={listaDeProyectos[proyectoActual].githubLink}
       />
     </div>

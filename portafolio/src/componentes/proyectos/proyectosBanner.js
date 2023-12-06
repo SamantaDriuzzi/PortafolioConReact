@@ -8,14 +8,6 @@ const ProyectosBanner = () => {
 
   return (
     <section className="proyectos-banner">
-      <div className="contenedor-banner">
-        <div className="contenedor-titulo">
-          <h2 className="titulo-seccion">Mis proyectos</h2>
-        </div>
-        <p className="parrafo-seccion">
-          Explora algunos de los proyectos en los que he trabajado.
-        </p>
-      </div>
       {loading ? <Loader /> : <Proyectos />}
     </section>
   );
