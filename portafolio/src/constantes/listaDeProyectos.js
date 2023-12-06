@@ -2,8 +2,25 @@ import bear from "../imagenes/mismoTamaño/bear-capture-proyect 1.png";
 import market from "../imagenes/mismoTamaño/product-pag-capture 1.png";
 import tribute from "../imagenes/mismoTamaño/tributePag-capture-project 1.png";
 import portfolio from "../imagenes/mismoTamaño/portfolio-project-capture 1.png";
+import challengeButton from "../imagenes/mismoTamaño/challenge-button.PNG";
+import challengeCat from "../imagenes/mismoTamaño/catWikiChallenge.png";
 
 const proyectosLista = [
+  {
+    key: "challengeCat",
+    descripcion:
+      "Desafio de 'DevChallenges.Io'. Página para búsqueda de razas de gatos",
+    imagen: challengeCat,
+    githubLink: "https://cat-wiki-challenge-gilt.vercel.app/",
+  },
+  {
+    key: "challengeButton",
+    descripcion:
+      "Desafio de 'DevChallenges.Io'. Creación de coleción de botones",
+    imagen: challengeButton,
+    githubLink: "https://challengebutton.vercel.app/",
+  },
+
   {
     key: "bear",
     descripcion:
