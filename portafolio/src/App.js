@@ -5,6 +5,8 @@ import ProyectosBanner from "./componentes/proyectos/proyectosBanner";
 import Habilidades from "./componentes/habilidades/habilidades";
 import SobreMi from "./componentes/sobreMi/sobreMi";
 import Contacto from "./componentes/contacto/contacto";
+import './App.css';
+
 
 export default function App() {
   return (

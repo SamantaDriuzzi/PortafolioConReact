@@ -27,6 +27,12 @@ import bear2 from "../imagenes/bear/bear2.png";
 import market from "../imagenes/market/market.png";
 import market1 from "../imagenes/market/market1.png";
 import market2 from "../imagenes/market/market2.png";
+import homeAp from "../imagenes/appointments/homeAp.png";
+import landingAp from "../imagenes/appointments/landingAp.png";
+import loginAp from "../imagenes/appointments/loginAp.png";
+import contactAp from "../imagenes/appointments/contactAp.png";
+
+
 import { FaReact, FaCss3Alt, FaHtml5, FaJsSquare, FaFigma, FaDatabase, FaGitAlt } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiTypescript, SiAuth0, SiExpress, SiRedux } from 'react-icons/si';
 
@@ -47,8 +53,18 @@ const proyectosLista = [
     imagen: ecommerce,
     arrImagenes: [ecommerce, shop, shop1, shop2, shop5],
     link: "https://e-commerce-m4-henry-hqoh.vercel.app/",
-    tecnologias: ["Next Js", "React",  "Typescript", "Redux", "Tailwind", "Figma", "Express", "TypeORM"],
-    logos: [ <SiNextdotjs/>, <FaReact />, <SiTypescript />,<SiRedux />, <SiTailwindcss />, <FaFigma />, <FaDatabase />],
+    tecnologias: ["Next Js", "React", "Typescript", "TailwindCSS"],
+    logos: [ <SiNextdotjs/>,<FaReact />, <SiTypescript />, <SiTailwindcss />],
+  },
+
+  {
+    name: "Jardines Aurora",
+    descripcion: "Jardines Aurora es una página web diseñada para gestionar una agenda de citas para un espacio de celebración de bodas. Este proyecto FullStack incluye un sistema completo de manejo de citas, desde la creación y edición hasta la eliminación y visualización de citas. Fue desarrollado utilizando las últimas tecnologías para asegurar una experiencia de usuario fluida y rápida.",
+    imagen: homeAp,
+    arrImagenes: [homeAp, landingAp, loginAp, contactAp],
+    link: "https://github.com/SamantaDriuzzi/gestorDeTurnos-front-m3",
+    tecnologias: [ "React",  "Typescript", "Redux", "Tailwind", "Figma", "Express", "TypeORM"],
+    logos: [ <FaReact />, <SiTypescript />,<SiRedux />, <SiTailwindcss />, <FaFigma />, <FaDatabase />],
   },
   {
     name: "Challenge CatWiki",
@@ -89,7 +105,8 @@ const proyectosLista = [
     link: "https://product-leanding-page.vercel.app/",
     tecnologias: ["CSS", "HTML"],
     logos: [<FaCss3Alt />, <FaHtml5 />],
-  }
+  },
+
 ];
 
 export default proyectosLista;
