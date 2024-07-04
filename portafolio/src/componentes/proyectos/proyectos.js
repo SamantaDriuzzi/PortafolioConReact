@@ -1,45 +1,49 @@
 import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/scss";
-import "swiper/scss/effect-cards";
-import "../../scss/componentes/proyectos/proyectos.scss";
-import { EffectCards } from "swiper/modules";
+import ModalProyecto from "./modal";
 import listaDeProyectos from "../../constantes/listaDeProyectos";
-import BotonLink from "../../bibliotecaUI/botonLink";
 
-export default function Proyectos() {
-  const [proyectoActual, setProyectoActual] = useState(0);
+const Proyectos = () => {
+  const [proyectoSeleccionado, setProyectoSeleccionado] = useState(null);
 
-  const cambiarProyectoActual = (swiper) => {
-    setProyectoActual(swiper.activeIndex);
+  const abrirModal = (proyecto) => {
+    setProyectoSeleccionado(proyecto);
+  };
+
+  const cerrarModal = () => {
+    setProyectoSeleccionado(null);
   };
 
   return (
-    <div>
-      <Swiper
-        effect={"cards"}
-        grabCursor={true}
-        modules={[EffectCards]}
-        loop={true}
-        onSlideChange={(swiper) => cambiarProyectoActual(swiper)}
-      >
-        {listaDeProyectos.map((proyecto) => (
-          <SwiperSlide key={proyecto.key}>
-            <img
-              className="imagen"
-              src={proyecto.imagen}
-              alt={proyecto.nombre}
-            />
-            <div className="contenedor-descripcion-proyecto">
-              <h4 className="descripcion-proyecto">{proyecto.descripcion}</h4>
+    <div className="contenedor-proyectos">
+      {listaDeProyectos.map((proyecto) => (
+        <div className="proyecto" key={proyecto.name}>
+          <img
+            className="imagen"
+            src={proyecto.imagen}
+            alt={proyecto.name}
+            onClick={() => abrirModal(proyecto)}
+          />
+          <div className="info-proyecto">
+            <h4 className="nombre-proyecto">{proyecto.name}</h4>
+            <div className="contenedor-logos">
+              {proyecto.logos.map((logo, index) => (
+                <div key={`${index}_${logo}`} className="logo">
+                  {logo}
+                </div>
+              ))}
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      <BotonLink
-        titulo={"Ver proyecto"}
-        toLink={listaDeProyectos[proyectoActual].githubLink}
-      />
+          </div>
+        </div>
+      ))}
+      
+      {proyectoSeleccionado && (
+        <ModalProyecto
+          proyecto={proyectoSeleccionado}
+          onClose={cerrarModal}
+        />
+      )}
     </div>
   );
-}
+};
+
+export default Proyectos;
