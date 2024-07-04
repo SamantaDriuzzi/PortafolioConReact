@@ -1,5 +1,5 @@
 import BotonLink from "../../bibliotecaUI/botonLink";
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -34,7 +34,7 @@ const ModalProyecto = ({ proyecto, onClose }) => {
       >
         {proyecto.arrImagenes.map((imagen, index) => (
           <SwiperSlide key={index}>
-            <img src={imagen} />
+            <img src={imagen}  alt={proyecto.name}/>
           </SwiperSlide>
         ))}
         

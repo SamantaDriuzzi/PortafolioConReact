@@ -1,5 +1,4 @@
-import tribute from "../imagenes/mismoTamaño/tributePag-capture-project 1.png";
-import portfolio from "../imagenes/mismoTamaño/portfolio-project-capture 1.png";
+
 import board from "../imagenes/easytask/board.png";
 import createTeam from "../imagenes/easytask/createTeam.png";
 import easyTask from "../imagenes/easytask/easyTask.png";
@@ -28,7 +27,7 @@ import bear2 from "../imagenes/bear/bear2.png";
 import market from "../imagenes/market/market.png";
 import market1 from "../imagenes/market/market1.png";
 import market2 from "../imagenes/market/market2.png";
-import { FaReact, FaNodeJs, FaCss3Alt, FaHtml5, FaJsSquare, FaGit, FaFigma, FaDatabase, FaGitAlt } from 'react-icons/fa';
+import { FaReact, FaCss3Alt, FaHtml5, FaJsSquare, FaFigma, FaDatabase, FaGitAlt } from 'react-icons/fa';
 import { SiNextdotjs, SiTailwindcss, SiTypescript, SiAuth0, SiExpress, SiRedux } from 'react-icons/si';
 
 
