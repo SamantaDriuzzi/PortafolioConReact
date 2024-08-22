@@ -31,13 +31,26 @@ import homeAp from "../imagenes/appointments/homeAp.png";
 import landingAp from "../imagenes/appointments/landingAp.png";
 import loginAp from "../imagenes/appointments/loginAp.png";
 import contactAp from "../imagenes/appointments/contactAp.png";
-
-
+import homeAutos from "../imagenes/ruedas/homeAutos.png";
+import autos from "../imagenes/ruedas/autos.png";
+import cartAutos from "../imagenes/ruedas/cartAutos.png";
+import editAutos from "../imagenes/ruedas/editAutos.png";
+import favoritos from "../imagenes/ruedas/favoritos.png";
+import mercadoPago from "../imagenes/ruedas/mercadoPago.png";
 import { FaReact, FaCss3Alt, FaHtml5, FaJsSquare, FaFigma, FaDatabase, FaGitAlt } from 'react-icons/fa';
-import { SiNextdotjs, SiTailwindcss, SiTypescript, SiAuth0, SiExpress, SiRedux } from 'react-icons/si';
+import { SiNextdotjs, SiTailwindcss, SiTypescript, SiAuth0, SiExpress, SiRedux, SiFirebase, SiMercadopago } from 'react-icons/si';
 
 
 const proyectosLista = [
+  {
+    name: "Ruedas Ecommerce",
+    descripcion: "RUEDAS es un proyecto desarrollado en el marco de un desafío técnico full stack para demostrar habilidades como gestión del tiempo, lógica y metodología de trabajo además de habilidades técnicas como React, CSS, Typescript, Firebase y la implementación de Mercado Pago.",
+    imagen: homeAutos,
+    arrImagenes: [homeAutos, autos, cartAutos, editAutos,favoritos, mercadoPago ],
+    link: "https://ecommerce-rueda.vercel.app/",
+    tecnologias: ["React","CSS", "Typescript", "Firebase", "Mercado Pago"],
+    logos: [<FaReact />, <FaCss3Alt />, <SiTypescript />, <SiFirebase />, <SiMercadopago />],
+  },
   {
     name: "EasyTask",
     descripcion: "EasyTask es una aplicación de gestión de tareas desarrollada como proyecto final del Bootcamp Henry. Este proyecto no solo nos permitió certificar el curso, sino que también colaboramos en equipo con otros cinco integrantes. Mi rol incluyó liderazgo en el equipo de Frontend, organización, y el desarrollo de habilidades blandas como empatía y comunicación efectiva. Contribuí al éxito del equipo asegurando que cumpliéramos con los objetivos del proyecto. Actualmente, estamos planificando mejoras y nuevas implementaciones para optimizar la aplicación.",
@@ -106,6 +119,7 @@ const proyectosLista = [
     tecnologias: ["CSS", "HTML"],
     logos: [<FaCss3Alt />, <FaHtml5 />],
   },
+  
 
 ];
 

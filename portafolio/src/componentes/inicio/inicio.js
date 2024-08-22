@@ -27,7 +27,7 @@ const Inicio = () => {
       <div className="contenedor-btn-link">
         <BotonLink
           titulo={"Ver CV"}
-          toLink={"https://drive.google.com/file/d/1BGO0pfcUNqrWmCVVcuTPBXDjccpzUhkM/view?usp=sharing"
+          toLink={"https://docs.google.com/document/d/1qKhBKCCOOmovm2PmLZuc3Vl-NuYRLVgL/edit?usp=sharing&ouid=105010010743587563433&rtpof=true&sd=true"
           }
         />
       </div>

@@ -19,14 +19,6 @@ const Habilidades = () => {
               key={`${index}_${elem.habilidad}`}
               habilidad={elem.habilidad}
               porcentaje={elem.porcentaje}
-              tooltip={
-                <div>
-                  {elem.tooltip[0]}
-                  <br />
-                  <br />
-                  {elem.tooltip[1]}
-                </div>
-              }
             />
           ))}
         </div>
@@ -36,14 +28,6 @@ const Habilidades = () => {
               key={`${index}_${elem.habilidad}`}
               habilidad={elem.habilidad}
               porcentaje={elem.porcentaje}
-              tooltip={
-                <div>
-                  {elem.tooltip[0]}
-                  <br />
-                  <br />
-                  {elem.tooltip[1]}
-                </div>
-              }
             />
           ))}
         </div>
